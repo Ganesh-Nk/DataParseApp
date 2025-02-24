@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<style>
+    :root {
+        --primary-color: #2C3E50; 
+        --secondary-color: #E74C3C; 
+        --tertiary-color: #ECF0F1; 
+        --quaternary-color: #3498DB; 
+    }
+    body {
+        background-color: var(--tertiary-color);
+    }
+    .privacy-container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .privacy-header {
+        color: var(--primary-color);
+        border-bottom: 3px solid var(--secondary-color);
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+    .privacy-section {
+        margin-bottom: 2.5rem;
+        padding: 1.5rem;
+        background-color: white;
+        border-radius: 8px;
+        border-left: 4px solid var(--quaternary-color);
+    }
+        .privacy-section h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .privacy-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+            .privacy-section ul li {
+                margin-bottom: 0.5rem;
+                padding-left: 1.5rem;
+                position: relative;
+            }
+                .privacy-section ul li:before {
+                    content: "•";
+                    color: var(--secondary-color);
+                    position: absolute;
+                    left: 0;
+                    font-weight: bold;
+                }
+
+    @@media (max-width: 768px) {
+        .privacy-container {
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .privacy-section {
+            padding: 1rem;
+        }
+    }
+</style>
+
+<div class="privacy-container">
+    <h2 class="privacy-header">Privacy Policy</h2>
+
+    <div class="privacy-section">
+        <h4>Data Collection</h4>
+        <p>We collect basic information when you use our application:</p>
+        <ul>
+            <li>Search queries</li>
+            <li>Pages visited</li>
+            <li>Time spent on pages</li>
+        </ul>
+    </div>
+
+    <div class="privacy-section">
+        <h4>How We Use Your Data</h4>
+        <p>Your data helps us:</p>
+        <ul>
+            <li>Improve search results</li>
+            <li>Enhance user experience</li>
+            <li>Fix technical issues</li>
+        </ul>
+    </div>
+
+    <div class="privacy-section">
+        <h4>Cookies</h4>
+        <p>We use cookies to:</p>
+        <ul>
+            <li>Remember your search preferences</li>
+            <li>Maintain your session</li>
+            <li>Track basic usage statistics</li>
+        </ul>
+    </div>
+    <div class="privacy-section">
+        <h4>Contact Us</h4>
+        <p>For privacy concerns, contact us at:</p>
+        <p><a href="mailto:privacy@example.com" style="color: var(--quaternary-color);">privacy@example.com</a></p>
+    </div>
+</div>
+
